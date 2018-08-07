@@ -13,8 +13,6 @@ public class RetrofitManager {
 
     private final Retrofit mRetrofit;
 
-    private static String BASE_URL = "https://www.zhaoapi.cn/";
-
     public RetrofitManager(String baseUrl) {
 
         mRetrofit = new Retrofit.Builder()
@@ -26,7 +24,7 @@ public class RetrofitManager {
 
     }
 
-    public static RetrofitManager getDefault() {
+    public static RetrofitManager getDefault(String BASE_URL) {
 
         return mRetrofitManager = new RetrofitManager(BASE_URL);
 
