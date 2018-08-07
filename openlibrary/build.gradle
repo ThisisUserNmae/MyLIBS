@@ -57,5 +57,7 @@ dependencies {
     // 支持 GIF 动图，需要添加
     implementation 'com.facebook.fresco:animated-gif:1.9.0'
 
+    //interceptor
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.9.0'
 
 }
